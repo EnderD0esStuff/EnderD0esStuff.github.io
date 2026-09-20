@@ -7,6 +7,24 @@
 
 <body>
     <img src="images/503.png">
-</body>
+    <div class="Text">
+        <p>
+            Song used by
+            <a href="https://www.youtube.com/@tory-fox-music">
+                Tory Fox
+            </a>
+        </p>
+    </div>
+    <button onclick="window.location.href='../';" class="Home">Back</button>
 
+    <div class="music-player">
+        <p style="color: rgb(253, 255, 255);"></p>
+        <audio id="music-audio" autoplay hidden loop onplay="this.currentTime = 0; this.onplay = null;">
+
+            <source src="audios/cat-song.mp3" type="audio/mpeg">
+        </audio>
+        <img id="musicButton" src="images/svg/mute.svg" style="cursor: pointer;" width="40" height="40">
+    </div>
+</body>
+<script src="js/audio-player.js" defer></script>
 </html>
